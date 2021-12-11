@@ -1,0 +1,70 @@
+<div>
+<h2>New Patient List</h2>
+<table mat-table [dataSource]="newpatient" >
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <ng-container matColumnDef="Patient-Name">
+      <th mat-header-cell *matHeaderCellDef> Patient Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.patientName}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Patient-ID">
+      <th mat-header-cell *matHeaderCellDef> Patient ID</th>
+      <td mat-cell *matCellDef="let element"> {{element.patientID}} </td>
+    </ng-container>
+  
+  
+    <ng-container matColumnDef="Speciality-Seen">
+      <th mat-header-cell *matHeaderCellDef> Speciality Seen </th>
+      <td mat-cell *matCellDef="let element"> {{element.specialitySeen}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Date-of-Birth">
+      <th mat-header-cell *matHeaderCellDef> Date of Birth </th>
+      <td mat-cell *matCellDef="let element"> {{element.dateOfBirth}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Date-of-Appointment">
+      <th mat-header-cell *matHeaderCellDef> Date of Appointment</th>
+      <td mat-cell *matCellDef="let element"> {{element.dateOfAppointment}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Time-of-Appointment">
+      <th mat-header-cell *matHeaderCellDef> Time of Appointment </th>
+      <td mat-cell *matCellDef="let element"> {{element.timeOfAppointment}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Appointment-Status">
+      <th mat-header-cell *matHeaderCellDef> Appointment Status</th>
+      <td mat-cell *matCellDef="let element"> {{element.appointmentStatus}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="CoPay">
+      <th mat-header-cell *matHeaderCellDef> CoPay</th>
+      <td mat-cell *matCellDef="let element"> {{element.coPay}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Insurance">
+        <th mat-header-cell *matHeaderCellDef> Insurance </th>
+        <td mat-cell *matCellDef="let element"> {{element.insurance}} </td>
+      </ng-container>
+  
+    
+  
+    <ng-container matColumnDef="Registration-Date">
+      <th mat-header-cell *matHeaderCellDef> Registration Date</th>
+      <td mat-cell *matCellDef="let element"> {{element.registrationDate}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+  </table>
+  
+  <div style= "margin-top: 15px ; width: 100%"> 
+    <mat-paginator 
+      [pageSizeOptions] = [5,10,25]
+      showFirstLastButtons>
+    </mat-paginator>
+</div>

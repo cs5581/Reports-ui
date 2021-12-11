@@ -1,0 +1,46 @@
+<div>
+<h2>Payer Based Report</h2>
+<table mat-table [dataSource]="payer" >
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="Patient-Name">
+      <th mat-header-cell *matHeaderCellDef> Patient Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.patientName}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="Patient-ID">
+      <th mat-header-cell *matHeaderCellDef> Patient ID</th>
+      <td mat-cell *matCellDef="let element"> {{element.patientID}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="Amount-Collected">
+      <th mat-header-cell *matHeaderCellDef> Amount Collected</th>
+      <td mat-cell *matCellDef="let element"> {{element.amountCollected}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="Amount-Owed">
+      <th mat-header-cell *matHeaderCellDef> Amount Owed </th>
+      <td mat-cell *matCellDef="let element"> {{element.amountOwed}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Insurance">
+        <th mat-header-cell *matHeaderCellDef> Insurance </th>
+        <td mat-cell *matCellDef="let element"> {{element.insurance}} </td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+  </table>
+
+  <div style= "margin-top: 15px ; width: 100%"> 
+    <mat-paginator 
+      [pageSizeOptions] = "[5,10,25]"
+      showFirstLastButtons>
+    </mat-paginator>
+</div>

@@ -1,0 +1,21 @@
+table,th,tr, td {
+    border: 1px solid black;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F6F9FE 
+
+}
+
+.mat-column-Patient-Name, .mat-column-Patient-ID, .mat-column-Date-of-Appointment, .mat-column-Time-of-Appointment {
+    padding-left: 5%;
+}
+
+h2 {
+    text-align: center;
+    background-color: #036FBA;
+    color: #F2F2F2
+}

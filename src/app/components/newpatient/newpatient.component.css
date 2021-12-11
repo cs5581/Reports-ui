@@ -1,0 +1,20 @@
+table,th,tr, td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F6F9FE 
+
+}
+
+.mat-column-Patient-Name, .mat-column-Patient-ID, .mat-column-Speciality-Seen, .mat-column-Date-of-Birth, .mat-column-Date-of-Appointment, .mat-column-Time-of-Appointment, .mat-column-Appointment-Status, .mat-column-CoPay, .mat-column-Insurance, .mat-column-Registration-Date {
+    padding-left: 1%;
+}
+
+h2 {
+    text-align: center;
+    background-color: #036FBA;
+    color: #F2F2F2
+}

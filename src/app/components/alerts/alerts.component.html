@@ -1,0 +1,35 @@
+<div>
+<h2>Alerts</h2>
+
+<table mat-table [dataSource]="alerts" class="mat-elevation-z8 demo-table" >
+
+    <ng-container matColumnDef="Patient-Name">
+      <th mat-header-cell *matHeaderCellDef> Patient Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.patientName}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Patient-ID">
+      <th mat-header-cell *matHeaderCellDef> Patient ID</th>
+      <td mat-cell *matCellDef="let element"> {{element.patientID}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Alert-Title">
+      <th mat-header-cell *matHeaderCellDef> Alert Title</th>
+      <td mat-cell *matCellDef="let element"> {{element.alertTitle}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Alert-Description">
+        <th mat-header-cell *matHeaderCellDef> Alert Description</th>
+        <td mat-cell *matCellDef="let element"> {{element.alertDescription}} </td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+  </table>
+</div>
+<div style= "margin-top: 15px ; width: 100%"> 
+<mat-paginator 
+  showFirstLastButtons
+  [pageSizeOptions] = "[5,10,25]">
+</mat-paginator>
+</div>
