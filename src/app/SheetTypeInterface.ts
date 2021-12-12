@@ -62,7 +62,7 @@ export interface VisitingList {
 }
 
 export interface PayerResponse {
-    payerArray: PayerBased[];
+    payerBasedReportList: PayerBased[];
 }
 
 export interface PayerBased {
