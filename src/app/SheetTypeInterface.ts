@@ -61,6 +61,10 @@ export interface VisitingList {
     
 }
 
+export interface PayerResponse {
+    payerArray: PayerBased[];
+}
+
 export interface PayerBased {
     patientName: string;
     patientID: string;
