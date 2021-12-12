@@ -14,7 +14,7 @@ export class ReportsService{
   private reconURL = 'https://reconciliation-sheet-service.herokuapp.com/practice-management-reports/reconciliation-sheet/date'
   private newpatientURL = 'http://localhost:5000/newPatientsList'
   private missedAppURL = 'http://localhost:5000/missedAppointmentsList'
-  private payerURL =  'http://localhost:5000/payerBasedReportList'//'https://payer-based-report-service.herokuapp.com/practice-management-reports/payer-based-report/date'
+  private payerURL =  'https://payer-based-report-service.herokuapp.com/practice-management-reports/payer-based-report/date'
   private overdueURL = 'http://localhost:5000/overdueRecordsList'
   private visitingURL = 'http://localhost:5000/patientVisitingList'
   private alertsURL = 'http://localhost:5000/clinicalAlertsList'
