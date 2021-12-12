@@ -1,8 +1,9 @@
 import { MissedAppointments, OverdueRecords, Alerts, VisitingList, PayerBased, RevenueAging, ReconSheet, PayerResponse } from './../SheetTypeInterface';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { map, Observable, of } from 'rxjs';
 import { NewPatient, } from '../SheetTypeInterface'
 import { HttpClient } from '@angular/common/http'
+import { catchError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
