@@ -1,4 +1,7 @@
+export interface ReconResponse {
 
+    reconciliationSheetBeanList: ReconSheet[];
+}
 export interface ReconSheet {
     patientName: string;
     patientID: string;
@@ -13,6 +16,11 @@ export interface ReconSheet {
     amountCollected: string;
 }
 
+export interface NewPatientResponse {
+    newPatientsList: NewPatient[];
+}
+
+
 export interface NewPatient {
     patientName: string;
     patientID: string;
@@ -26,6 +34,12 @@ export interface NewPatient {
     registrationDate: string;
 }
 
+export interface MissedAppResponse {
+
+    missedAppointmentsList: MissedAppointments[];
+
+}
+
 export interface MissedAppointments {
 
     patientName: string;
@@ -35,6 +49,10 @@ export interface MissedAppointments {
     
 }
 
+export interface OverdueResponse {
+    overdueRecordsList: OverdueRecords[];
+}
+
 export interface OverdueRecords {
     patientName: string;
     patientID: string;
@@ -42,13 +60,20 @@ export interface OverdueRecords {
 }
 
 
-
+export interface AlertsResponse{
+    clinicalAlertsList: Alerts[];
+}
 export interface Alerts {
     patientName: string;
     patientID: string;
     alertTitle: string;
     alertDescription: string;
     
+}
+
+export interface VisitingResponse {
+    
+    patientVisitingList: VisitingList[];
 }
 
 export interface VisitingList {
@@ -66,11 +91,17 @@ export interface PayerResponse {
 }
 
 export interface PayerBased {
+        
     patientName: string;
-    patientID: string;
+    patientID: string;    
     amountCollected: string;
     amountOwed: string;
     insurance: string;
+   
+}
+
+export interface RevenueResponse{
+    revenueAgingReportList: RevenueAging[];
 }
 
 export interface RevenueAging {
