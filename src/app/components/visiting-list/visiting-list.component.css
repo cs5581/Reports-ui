@@ -9,9 +9,12 @@ table {
 
 }
 
-.mat-column-Patient-Name, .mat-column-Patient-ID, .mat-column-Date-of-Appointment, .mat-column-Time-of-Appointment, .mat-column-Notes-Medications {
+.mat-column-Patient-Name, .mat-column-Patient-ID, .mat-column-Date-of-Appointment, .mat-column-Time-of-Appointment, .mat-column-Medications {
     padding-left: 5%;
 }
+
+.mat-column-Notes {
+  padding-left: 2%;
 
 h2 {
     text-align: center;
