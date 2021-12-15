@@ -44,7 +44,7 @@ export class ReportsService{
 
   getMissedApps(): Observable<MissedAppointments[]> {
     return this.http.get<MissedAppResponse>(this.missedAppURL).pipe(
-      map( (x: { missedAppointmentsList: any; }) => x.missedAppointmentsList), 
+      map( (x: { appointmentBeanList: any; }) => x.appointmentBeanList), 
       catchError(error => {
         throw new Error(error)
       }))
