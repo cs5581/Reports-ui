@@ -33,6 +33,7 @@
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
     <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
   </table>
+  </div>
 
   <div style= "margin-top: 10px ; width: 100%"> 
   <div style = "width: 10%"><mat-table matTableExporter [dataSource]="missedapp" #exporter="matTableExporter"></mat-table>
@@ -44,4 +45,4 @@
   </mat-paginator>
   
 </div>
-</div>
+
