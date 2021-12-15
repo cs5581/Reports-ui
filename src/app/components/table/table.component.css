@@ -8,7 +8,7 @@ table {
     background-color: #F6F9FE 
 
 }
-.mat-column-Patient-Name, .mat-column-Patient-ID, .mat-column-Doctor-ID, .mat-column-Speciality-Seen, .mat-column-Date-of-Birth, .mat-column-Date-of-Appointment, .mat-column-Time-of-Appointment, .mat-column-Appointment-Status, .mat-column-CoPay, .mat-column-Payment-Amount, .mat-column-Amount-Collected {
+.mat-column-Patient-Name, .mat-column-Patient-ID, .mat-column-Doctor-ID, .mat-column-Speciality-Seen, .mat-column-Date-of-Birth, .mat-column-Date-of-Appointment, .mat-column-Time-of-Appointment, .mat-column-Appointment-Status, .mat-column-Payment-Amount, .mat-column-Amount-Collected {
     padding-left: 1%;
 }
 
