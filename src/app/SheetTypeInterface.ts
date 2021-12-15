@@ -36,7 +36,7 @@ export interface NewPatient {
 
 export interface MissedAppResponse {
 
-    missedAppointmentsList: MissedAppointments[];
+    appointmentBeanList: MissedAppointments[];
 
 }
 
