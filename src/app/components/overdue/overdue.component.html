@@ -20,12 +20,15 @@
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
     <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
   </table>
-  <div style= "margin-top: 15px ; width: 100%"> 
-    <mat-paginator 
-      [pageSizeOptions] = "[5,10,25]"
-      showFirstLastButtons>
-    </mat-paginator>
-
   
-<div>
+  <div style= "margin-top: 10px ; width: 100%"> 
+  <div style = "width: 10%"><mat-table matTableExporter [dataSource]="overdue" #exporter="matTableExporter"></mat-table>
+    <button mat-button (click)="exporter.exportTable('csv')"> Download CSV</button></div>
+  
+  <mat-paginator 
+    [pageSizeOptions] = [5,10,25]
+    showFirstLastButtons>
+  </mat-paginator>
+  
+</div>
 
