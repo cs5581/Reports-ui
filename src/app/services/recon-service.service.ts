@@ -18,7 +18,7 @@ export class ReportsService{
   private payerURL = 'https://payer-based-report-service.herokuapp.com/practice-management-reports/payer-based-report/date' // 'http://localhost:5000/payerBasedReportList'
   private overdueURL = 'https://overdue-records-service.herokuapp.com/practice-management-reports/overdue-records' // 'http://localhost:5000/overdueRecordsList'
   private visitingURL = 'https://patient-visiting-list-service.herokuapp.com/practice-management-reports/patient-visiting-list/date' // 'http://localhost:5000/patientVisitingList'
-  private alertsURL = 'https://clinical-alerts-service.herokuapp.com/practice-management-reports/clinical-alerts/date//' //'http://localhost:5000/clinicalAlertsList'
+  private alertsURL = 'https://clinical-alerts-service.herokuapp.com/practice-management-reports/clinical-alerts/date' //'http://localhost:5000/clinicalAlertsList'
   private revenueURL = 'https://revenue-aging-report-service.herokuapp.com/practice-management-reports/revenue-aging-report/date/date'
   
 
