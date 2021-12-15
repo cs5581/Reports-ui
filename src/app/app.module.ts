@@ -18,6 +18,7 @@ import { AlertsComponent } from './components/alerts/alerts.component';
 import { VisitingListComponent } from './components/visiting-list/visiting-list.component';
 import { PayerBasedComponent } from './components/payer-based/payer-based.component';
 import { RevenueAgingComponent } from './components/revenue-aging/revenue-aging.component';
+import { MatTableExporterModule } from 'mat-table-exporter';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { RevenueAgingComponent } from './components/revenue-aging/revenue-aging.
     MatPaginatorModule,
     MatSortModule,
     MatTabsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableExporterModule
 
   ],
   providers: [],
